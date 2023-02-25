@@ -2,10 +2,7 @@ package com.baobab.application
 
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
-import android.appwidget.AppWidgetManager
 import android.content.Context
-import android.content.Intent
-import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -115,7 +112,6 @@ class MainActivity : AppCompatActivity() {
         // 변수 호출
         val now = LocalDate.now()
         val strNow = now.format(DateTimeFormatter.ofPattern("yyyy/MM/dd"))
-        val remainDate = findViewById<TextView>(R.id.remainDate)
 
         // 날짜 변환
         val sdf = SimpleDateFormat ("yyyy/MM/dd", Locale.KOREAN)
@@ -123,19 +119,19 @@ class MainActivity : AppCompatActivity() {
         val expDate = sdf.parse(binding.expDateSet.text as String)
         val nowDate = sdf.parse(strNow)
 
-        val dateProgressBar = findViewById<ProgressBar>(R.id.dateProgressBar)
-
         val a1 = nowDate!!.time - startDate!!.time
         val a2 = expDate!!.time - startDate.time
         val a3 = (a1 * 100) / a2
-        prefs.setString("dateProgress", a3.toString())
+        val a4 = if (a3<100) a3 else 100
+        prefs.setString("dateProgress", a4.toString())
 
         val b1 = expDate.time - nowDate.time
         val b2 = b1 / (60 * 60 * 24 * 1000)
         prefs.setString("remainDate", b2.toString())
 
-        dateProgressBar.progress = a3.toInt()
-        remainDate.text = prefs.getString("remainDate","0")
+        binding.dateProgressBar.progress = a4.toInt()
+        binding.displayProgress.text = a4.toString() + "%"
+        binding.remainDate.text = prefs.getString("remainDate","0")
     }
 
 
