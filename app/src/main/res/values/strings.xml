@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Baobab Study Café</string>
+
+    <string name="Display_welcome">환영합니다 :)</string>
+    <string name="Display_welcome_2">바오밥스터디카페 입니다!</string>
+
+    <string name="Display_SetDate">기간권 날짜를 설정해주세요!</string>
+    <string name="Display_StartDate">"시작 날짜 : "</string>
+    <string name="Display_ExpirationDate">"종료 날짜 : "</string>
+    <string name="Display_Set">설정</string>
+
+    <string name="Display_remainDay_1">현재 남은 일수는</string>
+    <string name="Display_remainDay_2">일 입니다.</string>
+
+    <string name="Display_SelectImage">바코드를 등록해주세요</string>
+    <string name="Display_ImageDescription">등록한 바코드가 여기에 표시됩니다.</string>
+    <string name="Display_SetBarcode">바코드 등록</string>
+    <string name="fileName_Barcode">barcode.png</string>
+    <string name="Display_barcode_Widget_able">선택하신 바코드는 \n바탕화면에 위젯으로 설정하실 수 있습니다.</string>
+</resources>
