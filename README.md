@@ -35,6 +35,6 @@ BaobabStudyCafe 출입을 위해 제작한 비공식 어플
 # 다운로드 링크 바로가기
 https://github.com/leestana01/BaobabStudyCF/releases/download/v1.0/BaobabStudyCF.apk
 
-또는 http://baobab.kro.kr/ ('내도메인.한국' 호스팅 서버를 이용한 단축 주소)
+또는 http://baobabcf.kro.kr/ ('내도메인.한국' 호스팅 서버를 이용한 단축 주소)
 
-![다운로드](https://user-images.githubusercontent.com/74558236/221369941-bb7da050-8976-4cd4-94e4-f4e0587849c0.png)
+![download](https://user-images.githubusercontent.com/74558236/221394334-77ee4037-e132-4a90-ada9-ab58fb1389ff.png)
